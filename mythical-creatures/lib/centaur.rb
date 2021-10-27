@@ -11,6 +11,7 @@ class Centaur
     end
 
     def shoot
+        return 'NO!' if @activity_counter >= 3
         @activity_counter += 1
         'Twang!!!'
     end
