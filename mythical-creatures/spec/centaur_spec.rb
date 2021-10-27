@@ -136,6 +136,14 @@ RSpec.describe Centaur do
   it 'gets stick if a potion is drunk while rested' do
     centaur = Centaur.new('George', 'Palomino')
 
+    expect(centaur.rested?).to be false
 
+    centaur.drink_potion
+
+    expect(centaur.rested?).to be true
+
+    centaur.drink_potion
+
+    expect(centaur.sick?).to be true
   end
 end
