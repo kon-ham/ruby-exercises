@@ -141,9 +141,6 @@ RSpec.describe Centaur do
     centaur.drink_potion
 
     expect(centaur.rested?).to be true
-
-    centaur.drink_potion
-
-    expect(centaur.sick?).to be true
+    expect(centaur.drink_potion).to eq("*BARF!*")
   end
 end
