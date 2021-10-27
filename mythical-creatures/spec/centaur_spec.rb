@@ -130,9 +130,12 @@ RSpec.describe Centaur do
     centaur.lay_down
 
     expect(centaur.drink_potion).to eq('NO!')
+    expect(centaur.rested?).to be false
   end
 
   it 'gets stick if a potion is drunk while rested' do
-    # your code here
+    centaur = Centaur.new('George', 'Palomino')
+
+
   end
 end
