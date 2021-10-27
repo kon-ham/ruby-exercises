@@ -9,6 +9,7 @@ class Centaur
         @standing = true
         @activity_counter = 0
         @laying = false
+        @rested = false
     end
 
     def shoot
