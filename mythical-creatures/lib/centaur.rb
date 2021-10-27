@@ -6,6 +6,7 @@ class Centaur
         @name = name
         @breed = breed
         @cranky = false
+        @standing = true
     end
 
     def shoot
@@ -18,5 +19,9 @@ class Centaur
 
     def cranky?
         @cranky
+    end
+
+    def standing?
+        @standing
     end
 end
