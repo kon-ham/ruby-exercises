@@ -13,6 +13,7 @@ class Centaur
 
     def shoot
         return 'NO!' if @activity_counter >= 3
+        return 'NO!' if @laying == true && @standing == false
         @activity_counter += 1
         'Twang!!!'
     end
