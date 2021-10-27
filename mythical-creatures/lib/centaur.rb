@@ -62,6 +62,8 @@ class Centaur
     end
 
     def drink_potion
+        return 'NO!' if @standing == false && @laying == true
+
         @rested = true
     end
 end
