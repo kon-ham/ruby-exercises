@@ -56,4 +56,12 @@ class Centaur
         @laying = false
         @standing = true
     end
+
+    def rested?
+        @rested
+    end
+
+    def drink_potion
+        @rested = true
+    end
 end
