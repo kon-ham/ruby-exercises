@@ -37,7 +37,7 @@ class Centaur
     end
 
     def sleep
-        'NO!' if @standing == true
+        return 'NO!' if @standing == true
     end
 
     def lay_down
