@@ -14,12 +14,14 @@ class Centaur
     def shoot
         return 'NO!' if @activity_counter >= 3
         return 'NO!' if @laying == true && @standing == false
+
         @activity_counter += 1
         'Twang!!!'
     end
 
     def run
         return 'NO!' if @laying == true
+
         @activity_counter += 1
         'Clop clop clop clop!'
     end
@@ -38,7 +40,9 @@ class Centaur
     end
 
     def sleep
-        return 'NO!' if @standing == true
+        return 'NO!' if @standing == true && @laying == false
+        
+        
     end
 
     def lay_down
