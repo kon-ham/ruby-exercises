@@ -29,4 +29,8 @@ class Centaur
     def standing?
         @standing
     end
+
+    def sleep
+        'NO!' if @standing == true
+    end
 end
