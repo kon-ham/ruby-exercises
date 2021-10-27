@@ -8,6 +8,7 @@ class Centaur
         @cranky = false
         @standing = true
         @activity_counter = 0
+        @laying = false
     end
 
     def shoot
@@ -30,7 +31,16 @@ class Centaur
         @standing
     end
 
+    def laying?
+        @laying
+    end
+
     def sleep
         'NO!' if @standing == true
+    end
+
+    def lay_down
+        @standing = false 
+        @laying = true
     end
 end
