@@ -7,17 +7,21 @@ class Centaur
         @breed = breed
         @cranky = false
         @standing = true
+        @activity_counter = 0
     end
 
     def shoot
+        @activity_counter += 1
         'Twang!!!'
     end
 
     def run
+        @activity_counter += 1
         'Clop clop clop clop!'
     end
 
     def cranky?
+        @cranky = true if @activity_counter >= 3
         @cranky
     end
 
