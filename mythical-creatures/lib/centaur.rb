@@ -42,7 +42,8 @@ class Centaur
     def sleep
         return 'NO!' if @standing == true && @laying == false
         
-        
+        @activity_counter = 0
+        @cranky = false
     end
 
     def lay_down
