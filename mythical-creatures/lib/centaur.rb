@@ -18,6 +18,7 @@ class Centaur
     end
 
     def run
+        return 'NO!' if @laying == true
         @activity_counter += 1
         'Clop clop clop clop!'
     end
