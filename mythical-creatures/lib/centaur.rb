@@ -44,4 +44,9 @@ class Centaur
         @standing = false 
         @laying = true
     end
+
+    def stand_up
+        @laying = false
+        @standing = true
+    end
 end
