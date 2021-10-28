@@ -33,8 +33,6 @@ RSpec.describe Wizard do
   end
 
   it 'starts rested' do
-    # create wizard
-    # .rested? returns true
     wizard = Wizard.new('Sal')
 
     expect(wizard.rested?).to be true
