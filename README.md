@@ -1,3 +1,5 @@
+### **Notice** Credit of the original repo here: https://github.com/turingschool/ruby-exercises
+
 # Ruby Exercises
 
 This is a collection of exercises to practice various aspects of Ruby.
