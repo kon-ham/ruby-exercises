@@ -41,6 +41,9 @@ RSpec.describe Wizard do
   it 'can cast spells' do
     # create wizard
     # .cast returns "MAGIC MISSILE!"
+    wizard = Wizard.new('Kon')
+
+    expect(wizard.cast).to eq('MAGIC MISSILE!')
   end
 
   it 'gets tired after casting three spells' do
