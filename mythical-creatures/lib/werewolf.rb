@@ -27,4 +27,8 @@ class Werewolf
         @hungry = true if @human == false && @wolf == true
         @hungry
     end
+
+    def consume(victim)
+        victim.status = :dead
+    end
 end
