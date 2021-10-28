@@ -35,6 +35,9 @@ RSpec.describe Wizard do
   it 'starts rested' do
     # create wizard
     # .rested? returns true
+    wizard = Wizard.new('Sal')
+
+    expect(wizard.rested?).to be true
   end
 
   it 'can cast spells' do
