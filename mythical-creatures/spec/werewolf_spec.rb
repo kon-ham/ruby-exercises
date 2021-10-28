@@ -50,14 +50,19 @@ RSpec.describe Werewolf do
   end
 
   it 'is not hungry by default' do
-    # your code here
     werewolf = Werewolf.new('David', 'London')
 
     expect(werewolf.hungry?).to be false
   end
 
   it 'becomes hungry after changing to a werewolf' do
-    # your code here
+    werewolf = Werewolf.new('David', 'London')
+
+    expect(werewolf.hungry?).to be false
+
+    werewolf.change!
+
+    expect(werewolf.hungry?).to be true
   end
 
   class Victim

@@ -24,6 +24,7 @@ class Werewolf
     end
 
     def hungry?
+        @hungry = true if @human == false && @wolf == true
         @hungry
     end
 end
