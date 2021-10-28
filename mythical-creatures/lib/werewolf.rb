@@ -1,7 +1,9 @@
 class Werewolf
-    attr_reader :name
-    
-    def initialize(name)
+    attr_reader :name,
+                :location
+
+    def initialize(name, location = 'London')
         @name = name
+        @location = location
     end
 end
