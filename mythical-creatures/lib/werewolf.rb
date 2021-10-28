@@ -7,6 +7,7 @@ class Werewolf
         @location = location
         @human = true
         @wolf = false
+        @hungry = false
     end
 
     def human?
@@ -20,5 +21,9 @@ class Werewolf
     def change!
         @wolf = !@wolf
         @human = !@human
+    end
+
+    def hungry?
+        @hungry
     end
 end
