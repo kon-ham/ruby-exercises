@@ -50,5 +50,16 @@ RSpec.describe Wizard do
     # check if wizard is rested
     # casts spell
     # check wizard is not rested
+    wizard = Wizard.new('Kon')
+
+    2.times do
+      wizard.cast
+    end
+
+    expect(wizard.rested?).to be true
+
+    wizard.cast
+
+    expect(wizard.rested?).to be false
   end
 end
