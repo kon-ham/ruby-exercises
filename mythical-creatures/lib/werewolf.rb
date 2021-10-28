@@ -29,6 +29,7 @@ class Werewolf
     end
 
     def consume(victim)
+        return "Gross! I'm not a cannibal." if @human == true && @wolf == false
         victim.status = :dead
     end
 end
