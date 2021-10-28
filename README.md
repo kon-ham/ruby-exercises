@@ -1,4 +1,4 @@
-### **Notice** Credit of the original repo here: https://github.com/turingschool/ruby-exercises
+### Credit of the original repo here: https://github.com/turingschool/ruby-exercises
 
 # Ruby Exercises
 
