@@ -21,15 +21,16 @@ class Werewolf
     def change!
         @wolf = !@wolf
         @human = !@human
+        @hungry = true if @human == false && @wolf == true
     end
 
     def hungry?
-        @hungry = true if @human == false && @wolf == true
         @hungry
     end
 
     def consume(victim)
         return "Gross! I'm not a cannibal." if @human == true && @wolf == false
+        @hungry = false
         victim.status = :dead
     end
 end

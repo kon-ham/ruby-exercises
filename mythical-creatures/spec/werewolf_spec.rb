@@ -92,12 +92,23 @@ RSpec.describe Werewolf do
 
     werewolf.change!
     werewolf.consume(victim)
-    
+
     expect(victim.status).to be :dead
   end
 
   it 'a werewolf that has consumed a human being is no longer hungry' do
-    # your code here
+    werewolf = Werewolf.new('David', 'London')
+    victim = Victim.new
+
+    expect(werewolf.hungry?).to be false
+
+    werewolf.change!
+
+    expect(werewolf.hungry?).to be true
+
+    werewolf.consume(victim)
+
+    expect(werewolf.hungry?).to be false
   end
 
   it 'a werewolf who has consumed a victim makes the victim dead' do
