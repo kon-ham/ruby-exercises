@@ -6,9 +6,19 @@ class Werewolf
         @name = name
         @location = location
         @human = true
+        @wolf = false
     end
 
     def human?
         @human
+    end
+
+    def wolf?
+        @wolf
+    end
+
+    def change!
+        @wolf = true
+        @human = false
     end
 end
